@@ -1,0 +1,181 @@
+.wallet {
+
+  &__container {
+    display: flex;
+  }
+
+  &__left {
+    background-color: rgba(255, 255, 255, 0.737);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  &__left-wrapper {
+    display: flex;
+    margin-left: -80px;
+    margin-bottom: 60px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-right: 150px;
+    font-size: px;
+    margin-top: 5px;
+  }
+
+  &__plus {}
+
+  &__form {
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked+&__input-span {
+    border: 2px solid blue;
+  }
+
+  &__input-span {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 400px;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid transparent;
+  }
+
+  &__span-num {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: dimgray;
+  }
+
+  &__span-text {
+    font-size: 20px;
+    color: dimgray;
+  }
+
+  &__right {
+    width: 700px;
+    background-color: #fff;
+    padding: 50px;
+  }
+
+  &__r-wrapper {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__r-text {
+    font-size: 30px;
+    margin: 0;
+    margin-right: 300px;
+  }
+
+  &__r-num {
+    margin: 0;
+  }
+
+  &__right {
+  }
+
+  &__hr {
+    height: 1px;
+    color: dimgray;
+    opacity: 0.4;
+  }
+
+  &__r-wrapper {
+  }
+
+  &__r-text {
+    margin: 0;
+    margin-right: 300px;
+  }
+
+  &__r-num {
+    margin: 0;
+  }
+
+  &__r-form {
+    padding-top: 50px;
+  }
+
+  &__r-label {
+    display: flex;
+    padding-bottom: 60px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__payment-input {
+    display: none;
+  }
+
+  &__payment-details {
+    display: flex;
+    position: relative;
+    margin-left: 60px;
+  }
+
+  &__payment-details::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url("./../../images/minus.svg");
+    border: 1px solid dimgray;
+    border-radius: 50%;
+    position: absolute;
+    left: -60px;
+  }
+
+  &__payment-input:checked +  &__payment-details::before {
+    background-image: url("./../../images/plus.svg");
+  }
+
+  &__payment-span {
+
+  }
+
+  &__payment-details-heading {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    margin-right: 300px;
+    width: 250px;
+  }
+
+  &__payment-details-text {
+    margin: 0;
+    font-size: 15px;
+    color: dimgray;
+  }
+
+  &__payment-input:checked+&__payment-details &__payment-num {
+    color: green;
+}
+
+  &__payment-num {
+    margin: 0;
+    margin-left: -90px;
+    font-size: 25px;
+  }
+}
